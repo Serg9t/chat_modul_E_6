@@ -1,0 +1,15 @@
+{% extends 'chat/base.html' %}
+
+{% block title %}Users | {% endblock %}
+
+{% block content %}
+
+<h1 class="title-h1">Users</h1>
+
+<div class="user-l">
+{% for user in users %}
+        <p class="user-s">{{ user.username }}</p>
+
+{% endfor %}
+</div>
+{% endblock %}

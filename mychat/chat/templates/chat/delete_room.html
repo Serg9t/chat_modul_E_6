@@ -1,0 +1,12 @@
+{% extends 'chat/base.html' %}
+
+{% block content %}
+<h1 class="title-h1"></h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <p>Delete"{{ object }}"?</p>
+
+    <input type="submit" value="Delete" />
+</form>
+{% endblock content %}
